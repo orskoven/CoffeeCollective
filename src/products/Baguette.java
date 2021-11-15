@@ -6,6 +6,13 @@ public class Baguette {
     private int price = 30;
     private int croissantPrice = 20;
 
+    public Baguette() {
+        this.title = title;
+        this.croissantTitle = croissantTitle;
+        this.price = price;
+        this.croissantPrice = croissantPrice;
+    }
+
     public String getTitle() {
         return title;
     }

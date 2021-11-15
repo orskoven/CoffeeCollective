@@ -5,6 +5,10 @@ import java.util.Scanner;
 public abstract class Menu {
     private Scanner sc = new Scanner(System.in);
 
+    public Menu(Scanner sc) {
+        this.sc = sc;
+    }
+
     public int receiveUserInput(){
         int userInput = sc.nextInt();
         return userInput;

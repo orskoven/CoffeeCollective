@@ -4,10 +4,17 @@ public class Croissant {
     private String title;
     private int price;
 
+    public Croissant() {
+        this.title = title;
+        this.price = price;
+    }
+    /*
     public Croissant(){
         this.title = new Baguette().getTitle();
         this.price = new Baguette().getCroissantPrice();
     }
+
+     */
 
     public String getTitle() {
         return title;

@@ -7,6 +7,14 @@ import java.util.Scanner;
 public class StatisticsMenu {
     private Scanner sc = new Scanner(System.in);
 
+    public StatisticsMenu(Scanner sc) {
+        this.sc = sc;
+    }
+
+    public StatisticsMenu() {
+
+    }
+
     public int receiveUserInput(){
         int userInput = sc.nextInt();
         return userInput;
@@ -18,10 +26,10 @@ public class StatisticsMenu {
     }
 
     public void displayCoffeeStatistics(){
-        System.out.println(CoffeeTypeCounter.howManyCoffeesSold());
+        System.out.println(new CoffeeTypeCounter().howManyCoffeesSold());
     }
 
     public void displayFoodStatistics(){
-        System.out.println(CoffeeTypeCounter.howManyFoodsSold());
+        System.out.println(new CoffeeTypeCounter().howManyFoodsSold());
     }
 }

@@ -5,6 +5,14 @@ import java.util.Scanner;
 public class OrderTakingMenu {
     private Scanner sc = new Scanner(System.in);
 
+    public OrderTakingMenu(Scanner sc) {
+        this.sc = sc;
+    }
+
+    public OrderTakingMenu() {
+
+    }
+
     public int receiveUserInput(){
         int userInput = sc.nextInt();
         return userInput;
